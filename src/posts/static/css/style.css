@@ -1,0 +1,107 @@
+@import 'reset.css';
+
+body{
+    background-color: mintcream;
+}
+
+nav{
+    background-color: rgb(123, 241, 182);
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+#blog{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 3rem;
+
+}
+
+#blog article{
+    width:70%;
+    margin-top: 2rem;
+}
+
+@media (max-width: 1024px) {
+    #blog article{
+        width:85%;
+    }
+}
+
+.post-title{
+    display: flex;
+    align-items: center;
+}
+
+.post-title a{
+    color: rgb(92, 199, 146);
+    text-decoration: none;
+    margin-left: 1rem;
+}
+
+.post-title a:hover{
+    color: rgb(16, 187, 101);
+}
+
+.post-title a:last-child:hover{
+    color: red;
+}
+.post-title > div{
+    margin-left: auto;
+}
+
+.post-author{
+    margin:0.5rem 0;
+}
+
+.post-excerpt{
+    margin-bottom: 1rem;
+}
+
+.post-detail{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.post-detail h1{
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+}
+
+input, textarea{
+    display: block;
+    padding: 1rem;
+    line-height: 1.5;
+    font-size: 1rem;
+    border: 1px solid rgb(189, 224, 207);
+    border-radius: 0.25;
+    min-width: 600px;
+}
+
+label{
+    display: inline-block;
+    box-sizing: border-box;
+    margin: 1rem 0;
+}
+
+.btn{
+    padding: 1rem;
+    border: none;
+    font-weight: 600;
+    font-size: 1.25rem;
+    border-radius: 0.3rem;
+    color: white;
+    width: 100%;
+    cursor: pointer;
+}
+
+.btn-submit{
+    background-color:rgb(123, 241, 182);
+}
+
+.btn-delete{
+    background-color: indianred;
+}
